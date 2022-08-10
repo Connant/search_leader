@@ -1,0 +1,33 @@
+@import '../common.scss';
+
+.footer {
+  width: 100%;
+  padding: 8px 0;
+  border-top: 1px solid $basket-border;
+  display: flex;
+
+  @media (max-width: $laptop-width) {
+    max-width: 930px;
+    margin: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 690px;
+  }
+
+  @media (max-width: $big-mobile-width) {
+    max-width: 510px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 290px;
+  }
+}
+
+.footer__info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+
+  color: #7C828B;
+}

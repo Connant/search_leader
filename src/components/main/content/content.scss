@@ -1,0 +1,243 @@
+@import '../../common/common.scss';
+
+.main {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  @media (max-width: $laptop-width) {
+    margin-top: 32px;
+  }
+}
+
+.main__section-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+
+  text-align: center;
+
+  color: $basic-black;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 36px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 26px;
+    line-height: 130%;
+    margin-top: 13px;
+  }
+}
+
+.main__list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 270px);
+  grid-gap: 40px 30px;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 70px;
+
+  @media (max-width: $laptop-width) {
+    grid-template-columns: repeat(3, 270px);
+    grid-gap: 40px;
+    margin-bottom: 68px;
+  }
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 450px;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 510px) {
+    grid-template-columns: repeat(auto-fit, 450px);
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 270px;
+    margin-top: 9px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-gap: 30px;
+    margin-bottom: 52px;
+  }
+}
+
+.list__item {
+  min-height: 380px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 20px;
+  outline: 1px solid $border-main;
+  cursor: pointer;
+
+  button {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    button {
+      display: block;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 590px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 380px;
+  }
+
+  &:hover,
+  &:active {
+    button {
+      display: block;
+      background-position: 0 100%;
+      transition: 0.4s linear;
+    }
+
+    .list__item--name {
+      transition: 0.3s linear;
+      margin-top: 4px;
+    }
+
+    .list__item--price {
+      transition: 0.3s linear;
+      bottom: 55px;
+    }
+  }
+}
+
+.list__item--img {
+  margin: 10px auto;
+
+  @media (max-width: $tablet-width) {
+    height: 399px;
+    margin-top: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.list__item--name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  margin-top: 23px;
+  margin-bottom: 0;
+  overflow: scroll;
+  max-height: 63px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 5px;
+    padding: 0 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 5px;
+    padding: 0;
+  }
+}
+
+.list__item--price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  margin-top: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+
+  @media (max-width: $tablet-width) {
+    bottom: 77px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: 65px;
+  }
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+  color: $basic-black;
+  border-radius: 0 !important;
+  padding: 0 33px;
+}
+
+.swal2-title {
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+  line-height: 130%;
+  margin: 24px auto 0px !important;
+}
+
+.swal2-html-container {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 130%;
+
+  p {
+    font-size: 16px !important;
+    text-align: start;
+  }
+}
+
+.swal2-styled.swal2-confirm {
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  color: transparent !important;
+  font-size: 1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 40px;
+  height: 40px;
+
+
+  &:hover {
+    background-color: $accent-color !important;
+
+    &:after,
+    &:before {
+      background-color: $basic-white !important;
+    }
+  }
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 17px;
+    background-color: black;
+    transform-origin: 0px 0px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 5;
+  }
+
+  &:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+}

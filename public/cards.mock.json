@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "productImage": "imgs/image11.png",
+      "productName": "Увлажнитель воздуха STARWIND SHC1322, 3л, белый",
+      "productPrice": "1650"
+    },
+    {
+      "id": 1,
+      "productImage": "imgs/image_11-4.png",
+      "productName": "Триммер PHILIPS HC3521/15 серебристый/черный",
+      "productPrice": "2290"
+    },
+    {
+      "id": 2,
+      "productImage": "imgs/image_11-8.png",
+      "productName": "Фитнес-трекер HONOR Band 5 CRS-B19S, 0.95\",\nрозовый",
+      "productPrice": "2390"
+    },
+    {
+      "id": 3,
+      "productImage": "imgs/image_11-9.png",
+      "productName": "Мышь A4TECH Bloody V3, игровая, оптическая, проводная, USB, черный",
+      "productPrice": "960"
+    },
+    {
+      "id": 4,
+      "productImage": "imgs/image_11-1.png",
+      "productName": "Фитнес-трекер HONOR Band 5 CRS-B19S, 0.95\",\nчерный",
+      "productPrice": "2390"
+    },
+    {
+      "id": 5,
+      "productImage": "imgs/image_11-5.png",
+      "productName": "Пылесос SINBO SVC 3497, 2500Вт, синий/серый",
+      "productPrice": "5670"
+    },
+    {
+      "id": 6,
+      "productImage": "imgs/image_11-13.png",
+      "productName": "Планшет DIGMA Optima 7 Z800 Android 10.0 серебристый",
+      "productPrice": "9490"
+    },
+    {
+      "id": 7,
+      "productImage": "imgs/image_11-2.png",
+      "productName": "Монитор игровой ACER Nitro RG241YPbiipx 23.8\" черный",
+      "productPrice": "16800"
+    },
+    {
+      "id": 8,
+      "productImage": "imgs/image_11-10.png",
+      "productName": "Экшн-камера DIGMA DiCam 310 4K, WiFi, черный",
+      "productPrice": "2290"
+    },
+    {
+      "id": 9,
+      "productImage": "imgs/image_11-6.png",
+      "productName": "Умная колонка ЯНДЕКС c голосовым помощником Алисой, серебристый",
+      "productPrice": "5670"
+    },
+    {
+      "id": 10,
+      "productImage": "imgs/image_11-14.png",
+      "productName": "Квадрокоптер DJI Mini 2  MT2PD Fly More Combo с камерой, серый",
+      "productPrice": "60990"
+    },
+    {
+      "id": 11,
+      "productImage": "imgs/image_11-11.png",
+      "productName": "Шлем виртуальной реальности HTC Vive PRO Eye EEA, черный/синий",
+      "productPrice": "11960"
+    },
+    {
+      "id": 12,
+      "productImage": "imgs/image_11-3.png",
+      "productName": "МФУ лазерный CANON i-Sensys MF445dw, A4, лазерный, черный",
+      "productPrice": "35310"
+    },
+    {
+      "id": 13,
+      "productImage": "imgs/image_11-7.png",
+      "productName": "Смарт-часы AMAZFIT Bip U, 1.43\", зеленый / зеленый",
+      "productPrice": "4490"
+    },
+    {
+      "id": 14,
+      "productImage": "imgs/image_11-15.png",
+      "productName": "Кофемашина PHILIPS EP1224/00, серый/черный",
+      "productPrice": "29990"
+    },
+    {
+      "id": 15,
+      "productImage": "imgs/image_11-12.png",
+      "productName": "Гироскутер MIZAR MZ10,5CN, 10.5\", карбон",
+      "productPrice": "12990"
+    }
+  ]
+}

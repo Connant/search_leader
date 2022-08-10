@@ -1,0 +1,86 @@
+@import '../../../common/common.scss';
+
+.list__item--button {
+  width: 186px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  text-transform: uppercase;
+  padding: 12px 13px 11px;
+
+  border: none;
+
+  color: $basic-white;
+  background-color: $accent-color;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-49%);
+
+  @media (max-width: $tablet-width) {
+    bottom: 20px;
+    letter-spacing: 0.05em;
+    padding: 13px 0 11px;
+  }
+
+  @media (max-width: $mobile-width) {
+    transform: translateX(-52%);
+    bottom: 11px;
+  }
+
+  &:hover {
+    color: $accent-color;
+    outline: 2px solid $accent-color;
+    background-color: $basic-white;
+  }
+
+  &:active {
+    color: $secondary-color;
+    outline: 2px solid $secondary-color;
+  }
+
+
+  &--active {
+    width: 186px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    padding: 12px 13px 11px;
+
+    cursor: not-allowed !important;
+    border: none;
+
+    color: $basic-white;
+    background-color: $secondary-color;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: $tablet-width) {
+      bottom: 10px;
+      letter-spacing: 0.05em;
+      padding: 13px 0 11px;
+    }
+
+    @media (max-width: $mobile-width) {
+      transform: translateX(-52%);
+      bottom: 0;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
