@@ -106,7 +106,9 @@ export default function BasketForm() {
         Swal.fire({
           title: `Спасибо <b>${name}</b>, ваш заказ <b>№${e.target[0].value}</b> оформлен.`,
           html: `<p>В ближайшее время мы свяжемся с вами по телефону <b>${number}</b> для его подтверждения.</p>`,
-        });
+        }).then(function() {
+          window.location.href = "/";
+      });
       },
       (error) => {
         Swal.fire({
